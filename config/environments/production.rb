@@ -95,9 +95,6 @@ Rails.application.configure do
 
   config.assets.compress = true
 
-  config.assets.initialize_on_precompile = true
-
-
   config.assets.compile = false
 
   config.assets.digest = true
