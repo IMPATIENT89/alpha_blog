@@ -8,4 +8,6 @@ Rails.application.routes.draw do
   get 'about', to: 'pages#about'
   # resources :articles, only: [:show, :index, :new, :create, :edit, :update, :destroy]    In this line we are using all of the CRUD action so we can just simply write like below
   resources :articles
+  get 'signup', to: 'users#new'
+  resources :users, except: [:new]
 end
